@@ -7,7 +7,7 @@
     <title>{{ $page->title ?: 'Arnaffiliates Web' }}</title>
     <meta name="author" content="Arnaffiliates Web">
     {{-- <meta name="description" content="{{ $metaDescription ?: '' }}"> --}}
-    <link rel="icon" href="http://local.myblog.com/storage/headersource/favicon.ico">
+    <link rel="icon" href="/storage/headersource/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/storage/headersource/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/storage/headersource/favicon-16x16.png">
 
