@@ -10,32 +10,32 @@
 
         <ul class="flex flex-col md:flex-row justify-center md:static absolute right-0 w-full md:bg-transparent bg-white  md:text-white text-black md:shadow-none shadow-xl" :class="atTop ? 'top-14' : 'top-20'">
             <li>
-                <a href="{{ route('home') }}" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block px-3 py-2">
+                <a href="/" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block px-3 py-2">
                     Home
                 </a>
             </li>
             <li>
-                <a href="{{ route('about-page') }}" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
+                <a href="/about-us" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
                     About
                 </a>
             </li>
             <li>
-                <a href="{{ route('our-team') }}" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
+                <a href="/attoneys" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
                     Attoneys
                 </a>
             </li>
             <li>
-                <a href="{{ route('home') }}" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
+                <a href="/" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
                     Practice Areas
                 </a>
             </li>
             <li>
-                <a href="{{ route('home') }}" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
+                <a href="/testing" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
                     Legal Insights
                 </a>
             </li>
             <li>
-                <a href="{{ route('home') }}" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
+                <a href="/" class="md:rounded md:py-2 md:px-2 md:mx-2 w-full block py-2 px-3">
                     Contact
                 </a>
             </li>

@@ -2,14 +2,16 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\TextWidgetResource\Pages;
-use App\Models\TextWidget;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Forms\Form;
+use App\Models\TextWidget;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Section;
 use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+use Awcodes\Curator\Components\Forms\CuratorPicker;
+use App\Filament\Resources\TextWidgetResource\Pages;
 
 class TextWidgetResource extends Resource
 {
@@ -28,8 +30,6 @@ class TextWidgetResource extends Resource
                 Forms\Components\TextInput::make('key')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\FileUpload::make('image')
-                    ->image(),
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(2048),
@@ -42,6 +42,16 @@ class TextWidgetResource extends Resource
                     ->required(),
                 Forms\Components\Toggle::make('active')
                     ->required(),
+                Section::make()
+                    ->schema([
+                        CuratorPicker::make('image')
+                            ->listDisplay(true)
+                            ->outlined(false)
+                            ->constrained(false)
+                            ->size('md'),
+                        CuratorPicker::make('image_mobile')
+                            ->listDisplay(false),
+                    ])->columns(2),
             ])->columns(1);
     }
 

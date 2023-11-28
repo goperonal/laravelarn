@@ -13,6 +13,7 @@ class TextWidget extends Model
     protected $fillable =[
         'key',
         'image',
+        'image_mobile',
         'title',
         'content',
         'active'
