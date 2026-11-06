@@ -46,6 +46,17 @@ class memberList extends PageBlock
                         ->multiple(false),
                     TextInput::make('memberName3')
                         ->maxLength(2048)
+            ]),
+            Grid::make()
+                ->schema([
+                    CuratorPicker::make('memberImage4')
+                        ->listDisplay(true)
+                        ->outlined(false)
+                        ->constrained(false)
+                        ->size('md')
+                        ->multiple(false),
+                    TextInput::make('memberName4')
+                        ->maxLength(2048)
             ])
         ]);
     }

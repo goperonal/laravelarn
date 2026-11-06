@@ -135,13 +135,6 @@
             <div class="w-16 h-1 bg-red-900 mx-auto mt-3 mb-8 md:mb-12 rounded-full"></div>
 
             <x-filament-fabricator::page-blocks :blocks="array_filter($page->blocks, fn($b) => $b['type'] === 'member-list')" />
-
-            <div class="mt-8">
-                <a href="/attoneys" class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3.5 bg-black hover:bg-red-900 text-white text-sm sm:text-base font-semibold rounded-xl transition shadow">
-                    <span>Lihat Seluruh Tim Advokat</span>
-                    <i class="fa-solid fa-users ml-2 text-xs"></i>
-                </a>
-            </div>
         </div>
     </section>
 
